@@ -1,0 +1,7 @@
+include README.rst
+include LICENSE
+include AUTHORS.rst
+include TODO
+
+recursive-include thermochem *.xml
+recursive-include thermochem *.txt
