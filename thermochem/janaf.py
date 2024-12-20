@@ -84,7 +84,8 @@ class JanafPhase(object):
             delimiter=r'[\t\s]+',
             engine='python',
             names=['T', 'Cp', 'S', '[G-H(Tr)]/T', 'H-H(Tr)', 'Delta_fH', 'Delta_fG', 'log(Kf)'],
-            on_bad_lines='warn'
+            #on_bad_lines='warn'
+            on_bad_lines="skip"     # Bỏ qua các dòng có lỗi định dạng
         )
         self.rawdata = data
 
